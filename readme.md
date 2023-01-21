@@ -10,7 +10,7 @@ Download the latest compiled zip, extract to any directory then run the exe. Alt
 | **Global:** |  |
 |:---:|---|
 | Shift+Tab | Toggle Hotkeys (Recommended if you need to type so you don't inadvertently activate hotkeys) |
-| Shift+R | Toggle Autosave (Autosaves every 5 minutes if window is in focus and when window is selected if not saved recently) |
+| F12 | Toggle Autosave (Autosaves every 5 minutes if window is in focus and when window is selected if not saved recently) |
 | **Main Window:** |  |
 | Shift+E | Enter One |
 | Shift+R | Rotate |
