@@ -45,7 +45,7 @@ Placing and deleting annotations via hotkey will more likely than not make the v
 This is my first project that sparked my interest in programming. The ability to solve problems with something I put effort into making myself was an exciting and satisfying experience for me that pushed me to learn more and keep growing.
 
 ## Credits
-[berban](https://github.com/berban) for his [FindClick](https://github.com/berban/FindClick) AutoHotkey library that makes this possible.
+[berban](https://github.com/berban) for his [FindClick](https://github.com/berban/FindClick) AutoHotkey library that makes this possible.  
 [AutoHotkey](https://github.com/AutoHotkey/AutoHotkey) for the easy to use scripting language this is based on.
 ## License
 [MIT License](https://choosealicense.com/licenses/mit/)
