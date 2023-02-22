@@ -55,7 +55,7 @@ AutoSaveLayout:
 	}
 	Return
 
-#IfWinActive, NDS User
+#IfWinActive CenturyLink
 	+E:: ; Enter One
 		FindClick("NDS_ICO\enterone", "r Center1")
 		return
