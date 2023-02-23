@@ -57,15 +57,13 @@ AutoSaveLayout:
 
 #IfWinActive CenturyLink
 	+E:: ; Enter One
-		FindClick("NDS_ICO\enterone", "r Center1")
+		FindClick("NDS_ICO\enterone", "r Center1 Sleep 1200 n2")
 		return
 	+R:: ; Rotate
-		Send {LAlt}
-		Send N
-		Send R
+		FindClick("NDS_ICO\rotate", "r Center1 Sleep 1200 n2")
 		return
 	+T:: ; Trailpoint
-		FindClick("NDS_ICO\trailpoint", "r Center1")
+		FindClick("NDS_ICO\trailpoint", "r Center1 Sleep 1200 n2")
 		return
 	+A:: ; Add LOC Annotation
 		FindClick("NDS_ICO\highlight", "r Center1 x169 y0")
@@ -97,46 +95,43 @@ AutoSaveLayout:
 		Send {Enter}
 		Return
 	+S:: ; Scale
-		Send {LAlt}
-		Send N
-		Send S
+		FindClick("NDS_ICO\scale", "r Center1 Sleep 1200 n2")
 		return
 	+D:: ; Drag to move
-		Send {LAlt}
-		Send N
-		Send D
+		FindClick("NDS_ICO\move", "r Center1 Sleep 1200 n2")
 		return
 	+F:: ; Fill Defaults
-		FindClick("NDS_ICO\getdefault", "r Center1")
+		FindClick("NDS_ICO\getdefault", "r Center1 Sleep 1200 n2")
 		return
 	+G:: ; Add to Collection
-		FindClick("NDS_ICO\collection", "r Center1")
+		FindClick("NDS_ICO\collection", "r Center1 Sleep 1200 n2")
 		return
 	+H:: ; Highlight
-		FindClick("NDS_ICO\highlight", "r Center1")
+		FindClick("NDS_ICO\highlight", "r Center1 Sleep 1200 n2r")
 		return
 	+X:: ; Clear Trail
 		send {LAlt}
+		Sleep 40000
 		send r
+		Sleep 40000
 		send {Enter}
 		return
 	+C:: ; Cursor
-		send {LAlt}
-		FindClick("NDS_ICO\select", "r Center1")
+		FindClick("NDS_ICO\select", "r Center1 Sleep 1200 n2")
 		return
 	+U:: ; Update
 		FindClick("NDS_ICO\update", "r Center1")
 		return
-	+N:: ; Open Cable Connectivity
-		Send {LAlt}
-		Send T
-		Send N
-		return
-	+L:: ; Open layout
-		Send {LAlt}
-		Send T
-		Send L
-		return
+	; +N:: ; Open Cable Connectivity
+	; 	Send {LAlt}
+	; 	Send T
+	; 	Send N
+	; 	return
+	; +L:: ; Open layout
+	; 	Send {LAlt}
+	; 	Send T
+	; 	Send L
+	; 	return
 
 #IfWinActive, Layout Designer
 	+T:: ; Trailpoint
@@ -189,15 +184,15 @@ AutoSaveLayout:
 ;		return
 ;
 ; Unused Button Functions
-;	FindClick("NDS_ICO\delete", "r Center1")
-;	FindClick("NDS_ICO\deleteselected", "r Center1")
-;	FindClick("NDS_ICO\clear", "r Center1")
-;	FindClick("NDS_ICO\replace", "r Center1")
-;	FindClick("NDS_ICO\move", "r Center1")
-;	FindClick("NDS_ICO\rotate", "r Center1")
-;	FindClick("NDS_ICO\scale", "r Center1")
-;	FindClick("NDS_ICO\insert", "r Center1")
-;	FindClick("NDS_ICO\grab", "r Center1")
+;	FindClick("NDS_ICO\delete", "r Center1 Sleep 1200 n2")
+;	FindClick("NDS_ICO\deleteselected", "r Center1 Sleep 1200 n2")
+;	FindClick("NDS_ICO\clear", "r Center1 Sleep 1200 n2")
+;	FindClick("NDS_ICO\replace", "r Center1 Sleep 1200 n2")
+;	FindClick("NDS_ICO\move", "r Center1 Sleep 1200 n2")
+;	FindClick("NDS_ICO\rotate", "r Center1 Sleep 1200 n2")
+;	FindClick("NDS_ICO\scale", "r Center1 Sleep 1200 n2")
+;	FindClick("NDS_ICO\insert", "r Center1 Sleep 1200 n2")
+;	FindClick("NDS_ICO\grab", "r Center1 Sleep 1200 n2")
 ;
 ; Create Hotkey Image Function
 ;	#IfWinNotActive NDS
